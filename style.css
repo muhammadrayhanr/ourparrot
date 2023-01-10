@@ -190,6 +190,7 @@ links {
   display: none;
   background-color: var(--secondaryColor);
   color: var(--primaryColor);
+  z-index: 9999;
 }
 
 /* Media Querry */
