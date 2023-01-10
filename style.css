@@ -1,0 +1,232 @@
+:root {
+  /* Color */
+  --primaryColor: #002939;
+  --secondaryColor: #ddc190;
+  --anotherColor: #dcb268;
+
+  /* Font */
+  --mainFont: 'Open Sans', sans-serif;
+  --headingFont: 'Merriweather', serif;
+}
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: var(--mainFont);
+}
+.heading {
+  font-family: var(--headingFont);
+  font-size: 24px;
+  font-weight: 700;
+}
+.subHeading {
+  font-weight: 300;
+}
+.section-margin {
+  padding-top: 110px;
+}
+.strip {
+  display: inline-block;
+  width: 45px;
+  height: 3px;
+  background-color: var(--primaryColor);
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+/* NavBar */
+.navbar {
+  background-color: var(--primaryColor) !important;
+}
+.navbar-brand {
+  font-family: var(--headingFont);
+  font-weight: 900;
+}
+.navbar-brand span {
+  color: var(--secondaryColor);
+}
+.nav-link {
+  font-family: var(--headingFont);
+}
+.nav-link.active {
+  font-weight: 700;
+  color: var(--secondaryColor) !important;
+}
+
+/* Home */
+.home {
+  background-color: var(--primaryColor);
+  height: 650px;
+  padding-top: 10rem;
+}
+.home .heading {
+  color: var(--secondaryColor);
+}
+.btn-home a {
+  background-color: var(--secondaryColor);
+  font-family: var(--headingFont);
+  font-weight: 700;
+}
+.btn-home a:hover {
+  background-color: var(--primaryColor);
+  border: 1px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+}
+
+/* About */
+.about span {
+  color: var(--anotherColor);
+}
+.btn-sosmed {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+.btn-sosmed:hover {
+  background-color: white;
+  color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+}
+
+/* Service */
+.service span {
+  color: var(--anotherColor);
+}
+.card {
+  background-color: var(--primaryColor) !important;
+  color: #fff;
+}
+
+/* Product */
+.product span {
+  color: var(--anotherColor);
+}
+.popular .img-box {
+  border: 2px solid var(--primaryColor);
+  height: 300px;
+  background-color: rgba(173, 169, 169, 0.313);
+}
+.popular .card-product {
+  width: 230px;
+}
+.detail-product .label {
+  background-color: var(--primaryColor);
+  width: 100px;
+  color: white;
+}
+.detail-product button {
+  border: 2px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+  font-size: 1.8rem;
+}
+.detail-product button:hover {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+
+/* Modal Product */
+
+/* Testimonial */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--primaryColor) !important;
+}
+
+/* FAQ */
+.faq .accordion-button {
+  background-color: var(--primaryColor) !important;
+  color: white;
+}
+.faq a {
+  text-decoration: none;
+  color: var(--secondaryColor);
+}
+
+/* Contact */
+.contact span {
+  color: var(--anotherColor);
+}
+.contact-banner {
+  background-color: var(--primaryColor);
+}
+.contact-banner .contact-banner-body {
+  color: white;
+}
+.contact-banner .btn-contact a {
+  background-color: var(--secondaryColor);
+  font-family: var(--headingFont);
+  font-weight: 700;
+}
+.contact-banner .btn-contact a:hover {
+  background-color: var(--primaryColor);
+  border: 1px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primaryColor);
+  color: white;
+  margin-top: 140px;
+}
+footer a {
+  color: white;
+}
+footer a span {
+  color: var(--secondaryColor);
+}
+li {
+  list-style-type: none;
+}
+links {
+  border: 2px solid --secondaryColor;
+}
+
+/* Back to Top Button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+}
+
+/* Media Querry */
+@media screen and (min-width: 768px) {
+  .home {
+    padding-top: 14rem;
+  }
+  .home .heading {
+    font-size: 36px;
+  }
+  .popular i {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home .content-left {
+    padding-bottom: 40px;
+  }
+  .home .heading {
+    font-size: 46px;
+  }
+  .home .subHeading {
+    font-size: 20px;
+  }
+  .home .img1 {
+    left: 20%;
+    bottom: -10%;
+    height: 550px;
+  }
+  .home .img2 {
+    right: 0;
+    top: -20%;
+    height: 132px;
+  }
+  .home .container,
+  .home .row {
+    height: 100%;
+  }
+}
