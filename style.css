@@ -79,13 +79,13 @@ body {
   color: var(--anotherColor);
 }
 .btn-sosmed {
-  background-color: var(--secondaryColor);
-  color: var(--primaryColor);
+  background-color: var(--secondaryColor) !important;
+  color: var(--primaryColor) !important;
 }
 .btn-sosmed:hover {
-  background-color: white;
-  color: var(--secondaryColor);
-  border: 1px solid var(--secondaryColor);
+  background-color: white !important;
+  color: var(--secondaryColor) !important;
+  border: 1px solid var(--secondaryColor) !important;
 }
 
 /* Service */
@@ -111,8 +111,12 @@ body {
 }
 .detail-product .label {
   background-color: var(--primaryColor);
-  width: 100px;
   color: white;
+}
+.detail-product .label:hover {
+  background-color: white;
+  color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
 }
 .detail-product button {
   border: 2px solid var(--secondaryColor);
@@ -125,6 +129,87 @@ body {
 }
 
 /* Modal Product */
+.modal-body .img-fluid {
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid var(--primaryColor) !important;
+}
+
+/* Detail Product */
+.image-product {
+  width: 30%;
+  border: 2px solid var(--primaryColor) !important;
+  border-radius: 6px;
+}
+.image-gallery {
+  border: 2px solid var(--primaryColor);
+  background-color: rgba(173, 169, 169, 0.313);
+  overflow: hidden;
+}
+.image-gallery .img-fluid {
+  height: 300px;
+  width: 300px;
+}
+.btn-tutup {
+  background-color: var(--primaryColor) !important;
+  color: white !important;
+}
+.btn-tutup:hover {
+  background-color: white !important;
+  color: var(--primaryColor) !important;
+  border: 1px solid var(--primaryColor) !important;
+}
+.btn-wa {
+  background-color: white !important;
+  color: #3ed935 !important;
+  border: 1px solid #3ed935 !important;
+}
+.btn-wa:hover {
+  background-color: #3ed935 !important;
+  color: white !important;
+}
+.btn-ig {
+  background-color: white !important;
+  color: #d62976 !important;
+  border: 1px solid #d62976 !important;
+}
+.btn-ig:hover {
+  background-color: #d62976 !important;
+  color: white !important;
+}
+
+.table .table-left {
+  font-family: var(--headingFont);
+  font-size: 15px;
+  font-weight: 700;
+}
+.table .table-right {
+  font-family: var(--headingFont);
+  font-size: 15px;
+  font-weight: 300;
+}
+.btn-product {
+  background-color: var(--primaryColor) !important;
+  color: white !important;
+}
+.btn-product:hover {
+  background-color: white !important;
+  color: var(--primaryColor) !important;
+  border: 1px solid var(--primaryColor) !important;
+}
+.subHeading.active {
+  font-weight: 700;
+  color: var(--secondaryColor) !important;
+}
+.container-image {
+  width: 100%;
+  max-height: 500px;
+}
+.container-image .mySlides {
+  width: 100%;
+}
 
 /* Testimonial */
 .carousel-control-prev-icon,
@@ -135,11 +220,11 @@ body {
 /* FAQ */
 .faq .accordion-button {
   background-color: var(--primaryColor) !important;
-  color: white;
+  color: white !important;
 }
 .faq a {
   text-decoration: none;
-  color: var(--secondaryColor);
+  color: var(--secondaryColor) !important;
 }
 
 /* Contact */
@@ -204,6 +289,9 @@ links {
   .popular i {
     font-size: 2rem;
   }
+  .container-image .mySlides {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -229,5 +317,8 @@ links {
   .home .container,
   .home .row {
     height: 100%;
+  }
+  .container-image .mySlides {
+    width: 100%;
   }
 }

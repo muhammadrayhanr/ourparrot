@@ -17,7 +17,7 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -176,86 +176,74 @@
             <p class="subHeading">Kami hanya menjual burung dengan kualitas terbaik</p>
           </div>
         </div>
-        <div class="row mt-4 popular">
-          <div class="col d-lg-flex justify-content-lg-center">
-            <!-- Swipper -->
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <!-- Product 1 -->
-                <div class="swiper-slide card-product">
-                  <div class="img-box rounded-3 text-center p-4">
-                    <img src="assets/albino-cockatiel.png" style="width: 500px" class="img-fluid" alt="" />
-                  </div>
-                  <div class="detail-product mt-3 d-flex justify-content-between">
-                    <div class="info">
-                      <p class="label text-center rounded-3 py-2">Parrot</p>
-                      <p>Albino Cockatiel</p>
-                    </div>
-                    <div class="btn-card">
-                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="bx bx-search"></i></button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Product 2 -->
-                <div class="swiper-slide card-product">
-                  <div class="img-box rounded-3 text-center p-4">
-                    <img src="assets/lutino-pearl-cockatiel.png" style="width: 500px" class="img-fluid" alt="" />
-                  </div>
-                  <div class="detail-product mt-3 d-flex justify-content-between">
-                    <div class="info">
-                      <p class="label text-center rounded-3 py-2">Parrot</p>
-                      <p>Lutino Pearl Cockatiel</p>
-                    </div>
-                    <div class="btn-card">
-                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2"><i class="bx bx-search"></i></button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Product 3 -->
-                <div class="swiper-slide card-product">
-                  <div class="img-box rounded-3 text-center p-4">
-                    <img src="assets/indian-ringneck-violet.png" style="width: 500px" class="img-fluid" alt="" />
-                  </div>
-                  <div class="detail-product mt-3 d-flex justify-content-between">
-                    <div class="info">
-                      <p class="label text-center rounded-3 py-2">Parrot</p>
-                      <p>Indian Ringneck Violet</p>
-                    </div>
-                    <div class="btn-card">
-                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bx bx-search"></i></button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Product 4 -->
-                <div class="swiper-slide card-product">
-                  <div class="img-box rounded-3 text-center p-4">
-                    <img src="assets/sun-conure.png" class="img-fluid pt-5" alt="" />
-                  </div>
-                  <div class="detail-product mt-3 d-flex justify-content-between">
-                    <div class="info">
-                      <p class="label text-center rounded-3 py-2">Parrot</p>
-                      <p>Sun Conure</p>
-                    </div>
-                    <div class="btn-card">
-                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bx bx-search"></i></button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Product 5 -->
-                <div class="swiper-slide card-product">
-                  <div class="img-box rounded-3 text-center p-4">
-                    <img src="assets/white-face-cockatiel.png" class="img-fluid" alt="" />
-                  </div>
-                  <div class="detail-product mt-3 d-flex justify-content-between">
-                    <div class="info">
-                      <p class="label text-center rounded-3 py-2">Parrot</p>
-                      <p>White Face Cockatiel</p>
-                    </div>
-                    <div class="btn-card">
-                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal5"><i class="bx bx-search"></i></button>
-                    </div>
-                  </div>
-                </div>
+        <div class="row mt-4 popular d-flex justify-content-center gap-3">
+          <!-- Product 1 -->
+          <div class="col-md-6 col-12 card-product">
+            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+              <div class="img-box rounded-3 text-center">
+                <img src="assets/albinoCockatiel.png" style="width: 500px" class="img-fluid" alt="Albino Cockatiel Real Picture" />
+              </div>
+            </a>
+            <div class="detail-product mt-3 d-flex justify-content-between">
+              <div class="info w-100 text-center">
+                <a href="albino-cockatiel.html" class="text-decoration-none"><p class="label text-center rounded-3 p-2">Albino Cockatiel</p> </a>
+                <p class="fw-semibold">Rating: <i class="fas fa-star fa-sm text-warning fs-5"></i> 5</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-md-6 col-12 card-product">
+            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              <div class="img-box rounded-3 text-center">
+                <img src="assets/lutinoPearlCockatiel.png" style="width: 500px" class="img-fluid" alt="Lutino Pearl Cockatiel" />
+              </div>
+            </a>
+            <div class="detail-product mt-3 d-flex justify-content-between">
+              <div class="info w-100 text-center">
+                <a href="lutino-pearl-cockatiel.html" class="text-decoration-none"><p class="label text-center rounded-3 p-2">Lutino Pearl Cockatiel</p> </a>
+                <p class="fw-semibold">Rating: <i class="fas fa-star fa-sm text-warning fs-5"></i> 5</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-md-6 col-12 card-product">
+            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+              <div class="img-box rounded-3 text-center">
+                <img src="assets/indianRingneckViolet.png" style="width: 500px" class="img-fluid" alt="Indian Ringneck Violet" />
+              </div>
+            </a>
+            <div class="detail-product mt-3 d-flex justify-content-between">
+              <div class="info w-100 text-center">
+                <a href="indian-ringneck-violet.html" class="text-decoration-none"><p class="label text-center rounded-3 p-2">Indian Ringneck Violet</p></a>
+                <p class="fw-semibold">Rating: <i class="fas fa-star fa-sm text-warning fs-5"></i> 5</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="col-md-6 col-12 card-product">
+            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+              <div class="img-box rounded-3 text-center">
+                <img src="assets/sunConure.png" class="img-fluid pt-5" alt="Sun Conure" />
+              </div>
+            </a>
+            <div class="detail-product mt-3 d-flex justify-content-between">
+              <div class="info w-100 text-center">
+                <a href="sun-conure.html" class="text-decoration-none"><p class="label text-center rounded-3 p-2">Sun Conure</p></a>
+                <p class="fw-semibold">Rating: <i class="fas fa-star fa-sm text-warning fs-5"></i> 5</p>
+              </div>
+            </div>
+          </div>
+          <!-- Product 5 -->
+          <div class="col-md-6 col-12 card-product">
+            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+              <div class="img-box rounded-3 text-center">
+                <img src="assets/whiteFaceCockatiel.png" class="img-fluid" alt="White Face Cockatiel" />
+              </div>
+            </a>
+            <div class="detail-product mt-3 d-flex justify-content-between">
+              <div class="info w-100 text-center">
+                <a href="white-face-cockatiel.html" class="text-decoration-none"><p class="label text-center rounded-3 p-2">White Face Cockatiel</p></a>
+                <p class="fw-semibold">Rating: <i class="fas fa-star fa-sm text-warning fs-5"></i> 5</p>
               </div>
             </div>
           </div>
@@ -273,7 +261,8 @@
               <div class="container-fluid">
                 <div class="row">
                   <div class="col">
-                    <img class="img-fluid" src="assets/gallery-albino-cockatiel.jpg" alt="..." />
+                    <img class="img-fluid" src="assets/galleryAlbinoCockatiel.jpg" alt="Albino Cockatiel Real Picture" />
+                    <p class="text-center fw-medium py-2">Real Picture</p>
                   </div>
                 </div>
               </div>
@@ -293,7 +282,8 @@
               <div class="container-fluid">
                 <div class="row">
                   <div class="col">
-                    <img class="img-fluid" src="assets/gallery-lutino-pearl-cockatiel.jpg" alt="..." />
+                    <img class="img-fluid" src="assets/galleryLutinoPearlCockatiel.jpg" alt="Lutino Pearl Cockatiel Real Picture" />
+                    <p class="text-center fw-medium py-2">Real Picture</p>
                   </div>
                 </div>
               </div>
@@ -313,7 +303,8 @@
               <div class="container-fluid">
                 <div class="row">
                   <div class="col">
-                    <img class="img-fluid" src="assets/gallery-indian-ringneck-violet.jpg" alt="..." />
+                    <img class="img-fluid" src="assets/galleryIndianRingneckViolet.jpg" alt="Indian Ringneck Violet Real Picture" />
+                    <p class="text-center fw-medium py-2">Real Picture</p>
                   </div>
                 </div>
               </div>
@@ -333,7 +324,8 @@
               <div class="container-fluid">
                 <div class="row">
                   <div class="col">
-                    <img class="img-fluid" src="assets/gallery-sun-conure.jpg" alt="..." />
+                    <img class="img-fluid" src="assets/gallerySunConure.jpg" alt="Sun Conure Real Picture" />
+                    <p class="text-center fw-medium py-2">Real Picture</p>
                   </div>
                 </div>
               </div>
@@ -353,7 +345,8 @@
               <div class="container-fluid">
                 <div class="row">
                   <div class="col">
-                    <img class="img-fluid" src="assets/gallery-white-face-cockatiel.jpg" alt="..." />
+                    <img class="img-fluid" src="assets/galleryWhiteFaceCockatiel.jpg" alt="White Face Cockatiel Real Picture" />
+                    <p class="text-center fw-medium py-2">Real Picture</p>
                   </div>
                 </div>
               </div>
@@ -477,7 +470,7 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    Untuk pemesanan dapat dilakukan di marketplace <a href="https://www.tokopedia.com/ourpetshop/product">tokopedia</a> atau dengan menghubungi admin via <a href="https://wa.me/6281395856060">whatsapp</a>.
+                    Untuk pemesanan dapat dilakukan di marketplace <a href="https://www.tokopedia.com/ourpetshop/product">Tokopedia</a> atau dengan menghubungi admin via <a href="https://wa.me/6285155223165">WhatsApp</a>.
                   </div>
                 </div>
               </div>
@@ -581,13 +574,13 @@
             <h5 class="ps-4">Contact Person</h5>
             <ul class="mt-3">
               <li>
-                <a href="tel:081395856060" class="text-decoration-none"><i class="bx bx-phone" style="color: #ddc190"></i> 0813-9585-6060</a>
+                <a href="tel:085155223165" class="text-decoration-none"><i class="bx bx-phone" style="color: #ddc190"></i> 0851-5522-3165</a>
               </li>
               <li>
-                <a href="mailto:fahrulrosy15@gmail.com" class="text-decoration-none my-2"><i class="bx bx-envelope" style="color: #ddc190"></i> fahrulrosy15@gmail.com</a>
+                <a href="mailto:mrayhanr4869@gmail.com" class="text-decoration-none my-2"><i class="bx bx-envelope" style="color: #ddc190"></i> mrayhanr4869@gmail.com</a>
               </li>
               <li>
-                <a href="https://wa.me/6281395856060" class="text-decoration-none"><i class="bx bxl-whatsapp" style="color: #ddc190"></i> 0813-9585-6060</a>
+                <a href="https://wa.me/6285155223165" class="text-decoration-none"><i class="bx bxl-whatsapp" style="color: #ddc190"></i> 0851-5522-3165</a>
               </li>
             </ul>
           </div>
@@ -610,19 +603,18 @@
           <hr class="border w-100" />
         </div>
         <p class="text-center">
-          © 2023 Reserved by <a href="https://www.instagram.com/mrayhanrohadi/" class="text-decoration-none" target="_blank"><span>Muhammad Rayhan Rohadi</span> </a>| Powered by
-          <a href="https://www.gamelab.id/" class="text-decoration-none" target="_blank"><span>Gamelab</span></a>
+          © 2023 Reserved by <a href="https://www.instagram.com/mrayhanrohadi/" class="text-decoration-none" target="_blank"><span>Muhammad Rayhan Rohadi</span>
         </p>
       </div>
     </footer>
 
     <!-- Back to top button -->
-    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+    <a class="btn btn-floating btn-lg" id="btn-back-to-top">
       <i class="fas fa-arrow-up"></i>
-    </button>
+    </a>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
     <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- Custom JS -->
